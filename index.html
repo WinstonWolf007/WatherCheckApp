@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="displayNav"></div>
+
+    <nav class="nav">
+        <div id="graf" class="btn-nav">
+            <div></div>
+            <img src="leaderboard.png" onclick="openPage('leaderboard')">
+        </div>
+        <div id="settings" class="btn-nav">
+            <div></div>
+            <img src="settings.png" onclick="openPage('settings')">
+        </div>
+        <div id="alert" class="btn-nav">
+            <div></div>
+            <img src="alarm.png" onclick="openPage('alert')">
+        </div>
+    </nav>
+    
+
+    <div id="settings-page" style="display: none;">
+        <div id="el1" class="settings-el">
+            <p>Dark theme</p>
+            <input type="checkbox">
+        </div>
+
+        <div id="el2" class="settings-el">
+            <p>Email</p>
+            <input type="email">
+        </div>
+
+        <div id="el4" class="settings-el">
+            <p>On/Off Machine</p>
+            <input type="checkbox">
+        </div>
+
+        <div id="submit" class="settings-el">
+            <button type="submit" id="btn">Save Change</button>
+        </div>
+    </div>
+
+    <div id="alert-page" style="display: none;">
+        <div id="el1" class="alert-el">
+            <p>Wather level</p>
+            <input type="checkbox">
+        </div>
+        <div id="el2" class="alert-el">
+            <p>Volt limit</p>
+            <input type="checkbox">
+        </div>
+        <div id="el3" class="alert-el">
+            <p>Inactivity</p>
+            <input type="checkbox">
+        </div>
+        <div id="el4" class="alert-el">
+            <p>More activity</p>
+            <input type="checkbox">
+        </div>
+        <div id="el5" class="alert-el">
+            <p>Code error</p>
+            <input type="checkbox">
+        </div>
+        <div id="submit">
+            <button type="submit" id="btn">Save Change</button>
+        </div>
+    </div>
+
+    <div id="leaderboard-page" style="display: none;">
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
