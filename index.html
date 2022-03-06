@@ -12,24 +12,29 @@
     <div class="displayNav"></div>
 
     <nav class="nav">
-        <div id="graf" class="btn-nav">
+        <div id="graf" class="btn-nav logo" onclick="openPage('leaderboard')">
             <div></div>
-            <img src="leaderboard.png" onclick="openPage('leaderboard')">
+            <img src="img/leaderboard.png">
         </div>
-        <div id="settings" class="btn-nav">
+        <div id="settings" class="btn-nav logo" onclick="openPage('settings')">
             <div></div>
-            <img src="settings.png" onclick="openPage('settings')">
+            <img src="img/settings.png">
         </div>
-        <div id="alert" class="btn-nav">
+        <div id="alert" class="btn-nav logo" onclick="openPage('alert')">
             <div></div>
-            <img src="alarm.png" onclick="openPage('alert')">
+            <img src="img/alarm.png">
         </div>
     </nav>
     
 
-    <div id="settings-page" style="display: none;">
+    <div id="settings-page" style="display: none; z-index: 1;">
         <div id="el1" class="settings-el">
             <p>Dark theme</p>
+            <input type="checkbox">
+        </div>
+
+        <div id="el3" class="settings-el">
+            <p>3d theme</p>
             <input type="checkbox">
         </div>
 
